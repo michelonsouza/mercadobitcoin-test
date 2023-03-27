@@ -1,0 +1,108 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.step-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.step-info-container > * {
+  color: var(--title);
+}
+
+.step-info-container>.step-info .step-count {
+  color: var(--primary);
+}
+
+.step-info-container>.step-title {
+  font-size: 1.5rem;
+  color: var(--title);
+}
+
+form {
+  width: 100%;
+}
+
+.steps-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 408px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.steps-container > .step .step-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
+}
+
+.step .step-input-container > label {
+  color: var(--text);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.step .step-person-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.step .step-person-selection-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navigate-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.navigate-container button {
+  flex: 1;
+}
+
+.global-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--loading-background);
+  height: 100vh;
+  width: 100vw;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.global-loading > img {
+  width: 124px;
+  height: 124px;
+  animation: loading 700ms linear infinite;
+}
