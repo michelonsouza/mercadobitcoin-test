@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/colors.css">
+  <link rel="stylesheet" href="./static/css/helpers.css">
+  <link rel="stylesheet" href="./static/css/main.css">
+  <link rel="stylesheet" href="./static/css/application.css">
+
+  <title>MercadoBitcoin | Test</title>
+</head>
+
+<body>
+  <div class="global-loading hide">
+    <img src="./static/assets/loading.svg" alt="loading circle">
+  </div>
+  <div class="root">
+    <div class="step-info-container">
+      <p class="step-info">Etapa <span class="step-count">1</span> de 4</p>
+      <h1 class="step-title">Seja bem vindo(a)</h1>
+    </div>
+    <form id="registration-form">
+      <label for="username" class="hide">username</label>
+      <input id="username" type="text" value="mercadobitcoin" name="username" autocomplete="username"  hidden>
+      <div class="steps-container"></div>
+      <div class="navigate-container">
+        <button type="button" class="secondary hide">Voltar</button>
+        <button type="submit" class="primary">Continuar</button>
+      </div>
+    </form>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/encrypt-storage@latest/dist/index.js"></script>
+<script type="module" src="./static/js/main.mjs"></script>
+
+</html>
